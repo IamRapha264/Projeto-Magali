@@ -1,0 +1,74 @@
+.hidden {
+    display: none;
+}
+
+section.agents {
+    display: grid;
+    gap: 5rem;
+
+    padding: 2rem 3rem;
+}
+
+section.agents .agents-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    padding: 2rem;
+
+    list-style: none;
+}
+
+section.agents .agents-container .agent {
+    display: grid;
+    grid-template-columns: 20rem max-content;
+    
+
+    position: relative;
+}
+
+section.agents .agents-container .agent > img {
+    width: 100%;
+}
+
+section.agents .agents-container .agent .agent-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2rem 5rem;
+}
+
+section.agents .agents-container .agent .agent-wrapper h2 {
+    display: grid;
+    font-size: 6rem;
+}
+
+section.agents .agents-container .agent .agent-wrapper h2 .agent-class {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Tungsten', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: .1rem
+}
+
+section.agents .agents-container .agent .agent-wrapper h2 .agent-class img {
+    width: 1.5rem;
+}
+
+section.agents .agent .agent-wrapper h2 span.fi {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    outline: .1rem solid rgba(255, 255, 255, .1);
+    background-size: cover;
+}
+
+section.agents .agents-container .agent .agent-wrapper p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-indent: 2rem;
+    width: 30rem;
+}

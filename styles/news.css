@@ -1,0 +1,76 @@
+#app {
+    background: var(--main-red);
+}
+
+section.news {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 2rem 3rem;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+section.news .news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+section.news .news-container .news-wrapper {
+    display: flex;
+    gap: 2rem;
+
+}
+
+section.news .news-container .news-wrapper .news-thumbnail {
+    width: 20rem;
+    height: 25rem;
+    flex: 1;
+    z-index: 1;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+    border: .5rem solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+section.news .news-container .news-wrapper img {
+    width: 100%;
+}
+
+section.news .news-container .news-wrapper .news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 1rem;
+    width: fit-content;
+    z-index: 1;
+    
+}
+
+section.news .news-container .news-wrapper .news-content p {
+    font-weight: 300;
+}
+
+section.news .news-container .news-wrapper .news-content a {
+    border-radius: 1px;
+    height: 3rem;
+    padding: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    transition: all .5s;
+}
+
+section.news .news-container .news-wrapper .news-content a:hover {
+    background: rgba(255, 255, 255, .3);
+}

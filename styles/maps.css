@@ -1,0 +1,78 @@
+.hidden {
+    display: none;
+}
+
+section.maps {
+    display: grid;
+    gap: 5rem;
+
+    padding: 2rem 3rem;
+}
+
+section.maps .maps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem .5rem;
+    width: fit-content;
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    list-style: none;
+}
+
+section.maps .maps-container .map {
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+
+    position: relative;
+
+    background: var(--map);
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: .1rem;
+
+    transition: border .2s;
+}
+
+section.maps .maps-container .map:hover {
+    border-color: rgba(255, 255, 255, .8);
+}
+
+section.maps .maps-container .map > span {
+    display: flex;
+    padding: .5rem;
+    width: 10rem;
+    height: fit-content;
+
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+
+    position: absolute;
+    top: -1.5rem;
+    left: .5rem;
+
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+section.maps .maps-container .map p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: auto 0 0 auto;
+
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+section.maps .maps-container .map p .fi {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-size: cover;
+}
